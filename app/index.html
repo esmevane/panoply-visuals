@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='/styles/oxygen.css'>
+    <link rel='stylesheet' href="/styles/font-awesome.css">
+    <link rel="stylesheet" href="/styles/application.css">
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/underscore.js"></script>
+    <script src="/scripts/backbone.js"></script>
+    <script src="/scripts/application.js"></script>
+    <title>Panoply</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Conversations
+        <i class='fa fa-fw fa-comments'></i>
+      </h1>
+    </header>
+    <section id="conversations">
+      <aside class="menu">
+        <form action="#" class="search">
+          <input type="search" placeholder="Search">
+        </form>
+        <button class="compose">
+          <i class="fa fa-fw fa-envelope-o"></i>
+          New message
+        </button>
+        <div class="labels">
+          <div class="headline">
+            <h2>
+              <div class='title'>Labels</div>
+              <div class='new'><i class="fa fa-fw fa-plus"></i></div>
+            </h2>
+          </div>
+          <ul class="list">
+            <li class="label">
+              <a href='#'>
+                <i class="fa fa-fw fa-inbox"></i>
+                Inbox
+              </a>
+            </li>
+            <li class="label">
+              <a href='#'>
+                <i class="fa fa-fw fa-arrow-circle-up"></i>
+                Sent
+              </a>
+            </li>
+            <li class="label">
+              <a href='#'>
+                <i class="fa fa-fw fa-thumbs-o-up"></i>
+                Accepted
+              </a>
+            </li>
+            <li class="label">
+              <a href='#'>
+                <i class="fa fa-fw fa-thumbs-o-down"></i>
+                Declined
+              </a>
+            </li>
+            <li class="label">
+              <a href='#'>
+                <i class="fa fa-fw fa-archive"></i>
+                Archives
+               </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="deck">
+        <nav class="pages">
+          <span class='prev'>
+            <a href="#">
+              <i class='fa fa-fw fa-chevron-left'></i>
+              Prev
+            </a>
+          </span>
+          <span class='next'>
+            <a href="#">
+              Next
+              <i class='fa fa-fw fa-chevron-right'></i>
+            </a>
+          </span>
+        </nav>
+      </div>
+      <div class="deck">
+        <ul class="threads">
+          <li class="thread">
+            <span class="select">
+              <input type="checkbox" name="selected" />
+            </span>
+            <span class="date">
+              <i class="fa fa-fw fa-calendar"></i>
+              Dec 25th
+            </span>
+            <span class="summary">
+              <a href='#'>username</a> requested an appointment on Jan 12th
+            </span>
+            <span class='controls'>
+              <a href='#' class='accept'>
+                <i class='fa fa-fw fa-thumbs-o-up action accept'></i>
+                Accept
+              </a>
+              <a href='#' class='accept'>
+                <i class='fa fa-fw fa-thumbs-o-down action decline'></i>
+                Decline
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="deck">
+        <div class="message">
+          <div class="header">
+            <div class="subject">
+              Appointment request for Jan 12th (5 days from now)
+            </div>
+            <div class="close">
+              <i class="fa fa-fw fa-angle-up"></i>
+            </div>
+          </div>
+          <div class="sender">
+            <i class="fa fa-user fa-fw"></i>
+            <a href="#">username</a> sent this request Dec 25th (12 days ago)
+          </div>
+          <div class="content">
+            Hey there! I heard about you guys today, would you have any time available this weekend?
+          </div>
+          <div class="controls">
+            <button>
+              <i class="fa fa-fw fa-thumbs-o-up"></i>
+              Accept
+            </button>
+            <button>
+              <i class="fa fa-fw fa-thumbs-o-down"></i>
+              Decline
+            </button>
+            <button>
+              <i class="fa fa-fw fa-calendar"></i>
+              Suggest a different time
+            </button>
+          </div>
+          <div class="response">
+            <textarea placeholder='Send a message in response'></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="deck">
+        <div class="message">
+          <form action="#" class="compose">
+            <input type="text" placeholder="User or organization names" name="to">
+            <input type="text" placeholder="Subject (optional)" name="subject">
+            <textarea name="body" placeholder='Enter your message here'></textarea>
+            <div class="actions">
+              <button>
+                <i class="fa fa-fw fa-trash-o"></i>
+                Discard
+              </button>
+              <button>
+                <i class="fa fa-fw fa-envelope-o"></i>
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+#conversations
+  .threads
+    background: white
+    box-shadow: golden-ratio($font-size, -3) golden-ratio($font-size, -3) golden-ratio($font-size, -1) tint(black, 70%)
+    margin: golden-ratio($font-size, -1)
+    min-height: golden-ratio($font-size, 2)
+    width: 98%
+
+  .thread
+    +row
+    border-top: 1px solid transparentize(black, 0.8)
+    cursor: pointer
+    display: inline-block
+    +transition(0.3s)
+    width: 100%
+    &:nth-child(1)
+      border-top: none
+    &:hover
+      background: transparentize($dusk-eggplant, 0.9)
+    span
+      padding: golden-ratio($font-size, -1)
+    .select
+      +span-columns(1)
+      text-align: center
+      padding-left: 0
+      padding-right: 0
+    .date
+      color: lighten(desaturate($dusk-rose, 10%), 10%)
+      padding-left: 0
+      padding-right: 0
+      +span-columns(2)
+    .summary
+      +span-columns(6)
+    .controls
+      +span-columns(3)
+      color: tint($dusk-eggplant, 30%)
+      text-align: right

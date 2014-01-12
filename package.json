@@ -1,0 +1,19 @@
+{
+  "name": "sojourn",
+  "private": true,
+  "devDependencies": {
+    "coffee-script": "",
+    "grunt": "",
+    "grunt-browserify": "",
+    "grunt-contrib-coffee": "",
+    "grunt-contrib-sass": "",
+    "grunt-contrib-watch": "",
+    "grunt-express": "",
+    "grunt-mocha-test": "",
+    "expect.js": "",
+    "express": "",
+    "matchdep": "",
+    "node-neat": ""
+  },
+  "dependencies": {}
+}

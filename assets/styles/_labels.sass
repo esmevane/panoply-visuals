@@ -1,0 +1,28 @@
+.labels
+  .title
+    +span-columns(9, 3)
+    line-height: golden-ratio($font-size, 1)
+
+  .new
+    color: transparentize($dusk-sunset, 0.7)
+    cursor: pointer
+    +span-columns(3, 3)
+    line-height: golden-ratio($font-size, 1)
+    text-align: right
+    +transition(0.3s)
+    &:hover
+      color: transparentize($dusk-sunset, 0.2)
+
+  .label
+    display: inline-block
+    border-bottom: 1px solid transparentize(tint($dusk-magenta, 50%), 0.1)
+    color: transparentize(tint($dusk-eggplant, 70%), 0.2)
+    cursor: pointer
+    padding: golden-ratio($font-size, -2)
+    width: 100%
+    +transition(0.3s)
+    &:hover
+      background: transparentize(white, 0.9)
+    a
+      color: transparentize(tint($dusk-eggplant, 80%), 0.1)
+      text-decoration: none

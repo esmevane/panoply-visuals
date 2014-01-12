@@ -1,0 +1,16 @@
+button
+  background: tint($dusk-eggplant, 30%)
+  border: none
+  color: white
+  cursor: pointer
+  font-size: $font-size
+  padding: golden-ratio($font-size, -2) golden-ratio($font-size, -1)
+  +slight-gradient(tint($dusk-eggplant, 30%))
+  text-shadow: inset 1px 1px 3px transparentize(black, 0.8)
+  +transition(background-color 0.3s)
+  &:hover
+    background: tint($dusk-eggplant, 40%)
+  &:active
+    background: tint($dusk-eggplant, 50%)
+  &:focus
+    outline: none

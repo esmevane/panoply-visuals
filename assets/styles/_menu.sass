@@ -1,0 +1,33 @@
+.menu
+  position: fixed
+  .compose
+    margin-bottom: golden-ratio($font-size, -1)
+  .search
+    margin-bottom: golden-ratio($font-size, -1)
+
+
+  #{$all-text-inputs}
+    background: transparentize(tint($dusk-eggplant, 40%), 0.5)
+    border: 1px solid transparentize(tint($dusk-rose, 50%), 0.1)
+    color: $dusk-base
+    font-size: golden-ratio($font-size, 1)
+    margin: 0
+    padding: golden-ratio($font-size, -1)
+    +placeholder
+      color: transparentize($dusk-base, 0.6)
+    transition: 0.3s
+    vertical-align: middle
+    width: 100%
+
+  // #{$all-text-inputs-hover}
+
+  #{$all-text-inputs-focus}
+    background: transparentize(tint($dusk-eggplant, 40%), 0.1)
+    outline: none
+
+  input[type=search]
+    +placeholder
+      &:before
+        font-family: FontAwesome
+        content: "\f002"
+        margin-right: golden-ratio($font-size, -2)

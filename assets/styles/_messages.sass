@@ -1,0 +1,68 @@
+.message
+  background: white
+  .header
+    color: $dusk-rose
+    font-size: golden-ratio($font-size, 1)
+    +row
+    .subject
+      +span-columns(11)
+    .close
+      color: transparentize($dusk-rose, 0.8)
+      cursor: pointer
+      +span-columns(1)
+      text-align: right
+  .content
+    border-bottom: 1px solid transparentize($dusk-eggplant, 0.75)
+
+  .actions
+    margin: golden-ratio($font-size, -2) 0
+    text-align: right
+
+  #{$all-text-inputs}
+    background: shade(white, 15%)
+    border: none
+    color: $dusk-base
+    font-size: $font-size
+    margin: 0
+    margin-bottom: golden-ratio($font-size, -1)
+    padding: golden-ratio($font-size, -1)
+    +placeholder
+      color: transparentize($dusk-base, 0.6)
+    +transition(0.3s)
+    width: 100%
+
+  // #{$all-text-inputs-hover}
+
+  #{$all-text-inputs-focus}
+    background: shade(white, 5%)
+    outline: none
+
+  input[name=to]
+    +placeholder
+      &:before
+        font-family: FontAwesome
+        content: "\f0c0"
+        padding-right: golden-ratio($font-size, -1)
+
+  textarea, .header
+    width: 100%
+  textarea, .close, .content, .controls, .compose, .header, .response, .sender, .subject
+    padding: golden-ratio($font-size, -2)
+  textarea
+    background: shade(white, 15%)
+    border: none
+    font-size: $font-size
+    height: golden-ratio($font-size, 4)
+    padding: golden-ratio($font-size, -1)
+    resize: none
+    +transition(0.3s)
+    &:active, &:focus
+      outline: none
+      background: shade(white, 5%)
+
+  .response textarea
+    +placeholder
+      &:before
+        font-family: FontAwesome
+        content: "\f112"
+        padding-right: golden-ratio($font-size, -1)

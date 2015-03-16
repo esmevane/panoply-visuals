@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -12,7 +13,7 @@ aside {
     margin-right: 0; }
 
 body {
-  background: #24172e;
+  background: #24172E;
   background-image: -webkit-radial-gradient(100% 0%,  ellipse, rgba(179, 86, 161, 0.2) 10%, rgba(255, 255, 255, 0)), -webkit-radial-gradient(110% 110%,  ellipse, rgba(179, 86, 161, 0.25) 10%, rgba(46, 6, 77, 0.7) 35%, rgba(255, 255, 255, 0));
   background-image: radial-gradient(  ellipse at 100% 0%, rgba(179, 86, 161, 0.2) 10%, rgba(255, 255, 255, 0)), radial-gradient(  ellipse at 110% 110%, rgba(179, 86, 161, 0.25) 10%, rgba(46, 6, 77, 0.7) 35%, rgba(255, 255, 255, 0));
   font-family: Oxygen, sans-serif;
@@ -80,8 +81,7 @@ button {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%;
-  line-height: 25.888px; }
+  width: 74.41059%; }
   .labels .title:last-child {
     margin-right: 0; }
 .labels .new {
@@ -91,7 +91,6 @@ button {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  line-height: 25.888px;
   text-align: right;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -125,7 +124,7 @@ button {
   .menu input[type="email"], .menu input[type="number"], .menu input[type="password"], .menu input[type="search"], .menu input[type="tel"], .menu input[type="text"], .menu input[type="url"], .menu input[type="color"], .menu input[type="date"], .menu input[type="datetime"], .menu input[type="datetime-local"], .menu input[type="month"], .menu input[type="time"], .menu input[type="week"] {
     background: rgba(129, 105, 148, 0.5);
     border: 1px solid rgba(217, 170, 207, 0.9);
-    color: #24172e;
+    color: #24172E;
     font-size: 25.888px;
     margin: 0;
     padding: 9.88875px;
@@ -145,19 +144,19 @@ button {
     outline: none; }
   .menu input[type=search]::-webkit-input-placeholder:before {
     font-family: FontAwesome;
-    content: "\f002";
+    content: "";
     margin-right: 6.11171px; }
   .menu input[type=search]:-moz-placeholder:before {
     font-family: FontAwesome;
-    content: "\f002";
+    content: "";
     margin-right: 6.11171px; }
   .menu input[type=search]::-moz-placeholder:before {
     font-family: FontAwesome;
-    content: "\f002";
+    content: "";
     margin-right: 6.11171px; }
   .menu input[type=search]:-ms-input-placeholder:before {
     font-family: FontAwesome;
-    content: "\f002";
+    content: "";
     margin-right: 6.11171px; }
 
 .pages {
@@ -188,7 +187,6 @@ button {
   background: white;
   box-shadow: 3.77733px 3.77733px 9.88875px #b2b2b2;
   margin: 9.88875px;
-  min-height: 41.88678px;
   width: 98%; }
 #conversations .thread {
   display: block;
@@ -214,6 +212,7 @@ button {
     display: block;
     margin-right: 2.35765%;
     width: 6.17215%;
+    color: #6c5082;
     text-align: center;
     padding-left: 0;
     padding-right: 0; }
@@ -249,7 +248,7 @@ button {
 .message {
   background: white; }
   .message .header {
-    color: #b356a0;
+    color: #B356A0;
     font-size: 25.888px;
     display: block; }
     .message .header:after {
@@ -281,7 +280,7 @@ button {
   .message input[type="email"], .message input[type="number"], .message input[type="password"], .message input[type="search"], .message input[type="tel"], .message input[type="text"], .message input[type="url"], .message input[type="color"], .message input[type="date"], .message input[type="datetime"], .message input[type="datetime-local"], .message input[type="month"], .message input[type="time"], .message input[type="week"] {
     background: #d8d8d8;
     border: none;
-    color: #24172e;
+    color: #24172E;
     font-size: 16px;
     margin: 0;
     margin-bottom: 9.88875px;
@@ -303,19 +302,19 @@ button {
     outline: none; }
   .message input[name=to]::-webkit-input-placeholder:before {
     font-family: FontAwesome;
-    content: "\f0c0";
+    content: "";
     padding-right: 9.88875px; }
   .message input[name=to]:-moz-placeholder:before {
     font-family: FontAwesome;
-    content: "\f0c0";
+    content: "";
     padding-right: 9.88875px; }
   .message input[name=to]::-moz-placeholder:before {
     font-family: FontAwesome;
-    content: "\f0c0";
+    content: "";
     padding-right: 9.88875px; }
   .message input[name=to]:-ms-input-placeholder:before {
     font-family: FontAwesome;
-    content: "\f0c0";
+    content: "";
     padding-right: 9.88875px; }
   .message textarea, .message .header {
     width: 100%; }
@@ -336,17 +335,19 @@ button {
       background: #f2f2f2; }
   .message .response textarea::-webkit-input-placeholder:before {
     font-family: FontAwesome;
-    content: "\f112";
+    content: "";
     padding-right: 9.88875px; }
   .message .response textarea:-moz-placeholder:before {
     font-family: FontAwesome;
-    content: "\f112";
+    content: "";
     padding-right: 9.88875px; }
   .message .response textarea::-moz-placeholder:before {
     font-family: FontAwesome;
-    content: "\f112";
+    content: "";
     padding-right: 9.88875px; }
   .message .response textarea:-ms-input-placeholder:before {
     font-family: FontAwesome;
-    content: "\f112";
+    content: "";
     padding-right: 9.88875px; }
+
+/*# sourceMappingURL=application.css.map */

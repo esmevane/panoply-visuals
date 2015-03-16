@@ -23,6 +23,7 @@ module.exports = (grunt) ->
     mochaTest:
       test:
         options:
+          log: true
           reporter: 'spec'
           require: [ 'expect.js', 'coffee-script' ]
         src: [ 'spec/**/*.coffee' ]
@@ -43,3 +44,5 @@ module.exports = (grunt) ->
   grunt.registerTask 'serve', [ 'express', 'watch' ]
   grunt.registerTask 'build', [ 'coffee', 'sass', 'browserify' ]
   grunt.registerTask 'test', [ 'mochaTest' ]
+
+  grunt.registerTask 'default', [ 'test', 'build', 'serve' ]
